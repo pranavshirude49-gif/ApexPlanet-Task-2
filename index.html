@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ApexPlanet Task 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<a class="logo" href="#home">Apex<span>Planet</span></a>
+<button id="menuBtn" class="menu-btn">☰</button>
+<div id="navLinks" class="nav-links">
+<a href="#home">Home</a><a href="#contact">Contact</a><a href="#tasks">To-Do</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+<div class="hero-content">
+<p class="eyebrow">APEXPLANET INTERNSHIP • TASK 2</p>
+<h1>Intermediate <span>HTML, CSS & JavaScript</span></h1>
+<p>Responsive contact form, JavaScript validation, Flexbox, CSS Grid and a dynamic To-Do List.</p>
+<a class="btn" href="#contact">Get Started</a>
+</div>
+<div class="code-card"><div class="dots">● ● ●</div>
+<pre>&lt;form&gt;
+  &lt;input type="email"&gt;
+  &lt;button&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+
+JavaScript → DOM → Interactive UI</pre>
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="section-grid">
+<div>
+<p class="eyebrow">01 • CONTACT FORM</p>
+<h2>Let's connect.</h2>
+<p class="muted">This form uses JavaScript to check required fields and email format before submission.</p>
+<ul class="checks"><li>✓ Required fields</li><li>✓ Email validation</li><li>✓ Responsive design</li></ul>
+</div>
+
+<form id="contactForm" class="card" novalidate>
+<div class="form-row">
+<div><label>Full Name *</label><input id="name" placeholder="Enter your name"><small id="nameError"></small></div>
+<div><label>Email *</label><input id="email" type="email" placeholder="you@example.com"><small id="emailError"></small></div>
+</div>
+<div><label>Subject *</label><input id="subject" placeholder="Enter subject"><small id="subjectError"></small></div>
+<div><label>Message *</label><textarea id="message" rows="5" placeholder="Write your message"></textarea><small id="messageError"></small></div>
+<button class="btn" type="submit">Send Message</button>
+<p id="success"></p>
+</form>
+</div>
+</section>
+
+<section id="tasks" class="section alt">
+<div class="heading"><p class="eyebrow">02 • DOM MANIPULATION</p><h2>My To-Do List</h2><p class="muted">Add, complete and delete tasks dynamically with JavaScript.</p></div>
+<div class="todo-grid">
+<div class="card">
+<form id="todoForm" class="todo-form">
+<input id="todoInput" placeholder="Add a new task...">
+<button class="btn" type="submit">Add Task</button>
+</form>
+<p id="todoError"></p>
+<ul id="todoList"></ul>
+<div class="todo-footer"><span id="count">0 tasks</span><button id="clear" type="button">Clear completed</button></div>
+</div>
+<div class="features">
+<div class="mini"><b>⚡ Dynamic</b><p>DOM elements are created and updated with JavaScript.</p></div>
+<div class="mini"><b>📱 Responsive</b><p>Flexbox, Grid and media queries support different screens.</p></div>
+<div class="mini"><b>✓ Interactive</b><p>Tasks can be completed or removed instantly.</p></div>
+<div class="mini"><b>🔒 Validated</b><p>Contact inputs are checked before submission.</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 ApexPlanet Task 2 • HTML • CSS • JavaScript</footer>
+<script src="script.js"></script>
+</body>
+</html>
